@@ -77,7 +77,6 @@ Falkonry C# Client to access [Falkonry Condition Prediction](falkonry.com) APIs
 	ds.Name = "TestDS" + randomNumber;
 	ds.Field.Time = time;
 	ds.DataSource = datasource;
-	ds.BaseTimeProperty = "millis";
 	var datastream = _falkonry.CreateDatastream(ds);
 ```
 #### Create Datastream for narrow/historian style data from a multiple entities
