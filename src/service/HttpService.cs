@@ -363,7 +363,7 @@ namespace falkonry_csharp_client.service
                 request.Method = "GET";
                 request.ContentType = "application/json";
 
-                Log.Debug($"GetOutput - url = {url}");
+                Log.Debug($"GetOutput: URL - {url}");
                 HttpWebResponse response;
                 try
                 {
@@ -381,8 +381,8 @@ namespace falkonry_csharp_client.service
                     httpResponse.StatusCode = Convert.ToInt32(response.StatusCode);
                     httpResponse.Response = resp;
                 }
-                Log.Debug($"GetOutput - Response = {httpResponse.Response}");
-                Log.Debug($"GetOutput - StatusCode = {httpResponse.StatusCode}");
+                Log.Debug($"GetOutput: Response - {httpResponse.Response}");
+                Log.Debug($"GetOutput: StatusCode - {httpResponse.StatusCode}");
 
                 return httpResponse;
             }
