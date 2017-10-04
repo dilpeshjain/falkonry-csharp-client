@@ -10,6 +10,7 @@ using System.Net.Security;
 using System.Collections.Specialized;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using log4net;
 
 namespace falkonry_csharp_client.service
 {
@@ -18,6 +19,7 @@ namespace falkonry_csharp_client.service
         private readonly string _host;
         private readonly string _token;
         private readonly string _defaultHeder;
+        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name);
 
         public bool RemoteCertificateValidationCallback(
 
@@ -361,7 +363,7 @@ namespace falkonry_csharp_client.service
                 request.Method = "GET";
                 request.ContentType = "application/json";
 
-
+                Log.Debug($"GetOutput - url = {url}");
                 HttpWebResponse response;
                 try
                 {
@@ -379,6 +381,8 @@ namespace falkonry_csharp_client.service
                     httpResponse.StatusCode = Convert.ToInt32(response.StatusCode);
                     httpResponse.Response = resp;
                 }
+                Log.Debug($"GetOutput - Response = {httpResponse.Response}");
+                Log.Debug($"GetOutput - StatusCode = {httpResponse.StatusCode}");
 
                 return httpResponse;
             }

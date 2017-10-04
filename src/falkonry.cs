@@ -2,12 +2,14 @@
 using falkonry_csharp_client.helper.models;
 using falkonry_csharp_client.service;
 using System;
+using log4net;
 
 namespace falkonry_csharp_client    
 {
     public class Falkonry
     {
         private readonly FalkonryService _falkonryService;
+        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name);
         public Falkonry(string host, string token, SortedDictionary<string, string> _piOptions = null)
         {
             _falkonryService = new FalkonryService(host, token, _piOptions);

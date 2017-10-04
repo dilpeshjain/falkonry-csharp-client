@@ -1,4 +1,4 @@
-[![Falkonry Logo](https://sandbox.falkonry.ai/img/logo.png)](http://falkonry.com/)
+[![Falkonry Logo](https://app.falkonry.ai/img/logo.png)](http://falkonry.com/)
 
 
 Falkonry C# Client to access [Falkonry Condition Prediction](falkonry.com) APIs
@@ -77,6 +77,7 @@ Falkonry C# Client to access [Falkonry Condition Prediction](falkonry.com) APIs
 	ds.Name = "TestDS" + randomNumber;
 	ds.Field.Time = time;
 	ds.DataSource = datasource;
+	ds.BaseTimeProperty = "millis";
 	var datastream = _falkonry.CreateDatastream(ds);
 ```
 #### Create Datastream for narrow/historian style data from a multiple entities

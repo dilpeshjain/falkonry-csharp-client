@@ -92,6 +92,11 @@ namespace falkonry_csharp_client.helper.models
             get;
             set;
         }
+        public string BaseTimeProperty
+        {
+            get;
+            set;
+        }
 
     }
 }
