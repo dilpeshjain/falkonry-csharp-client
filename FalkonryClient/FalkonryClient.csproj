@@ -9,7 +9,7 @@
     <RootNamespace>FalkonryClient</RootNamespace>
     <AssemblyName>FalkonryClient</AssemblyName>
     <PackageId>FalkonryClient</PackageId>
-    <PackageVersion>2.1.1</PackageVersion>
+    <PackageVersion>2.2.0</PackageVersion>
     <PackageIconUrl>https://camo.githubusercontent.com/f16e1afc5a98eb57dec450f529972c65e49ace2a/68747470733a2f2f6170702e66616c6b6f6e72792e61692f696d672f6c6f676f2e706e67</PackageIconUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://github.com/Falkonry/falkonry-csharp-client/blob/master/LICENSE</PackageLicenseUrl>
@@ -17,7 +17,7 @@
     <Title>FalkonryClient</Title>
     <Description>C# ADK for integrating with Falkonry's condition prediction APIs</Description>
     <Authors>Falkonry Inc</Authors>
-    <ReleaseVersion>2.1.1</ReleaseVersion>
+    <ReleaseVersion>2.2.0</ReleaseVersion>
     <PackageTags>falkonry prediction falkonryclient</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <PackageReleaseNotes>https://github.com/Falkonry/falkonry-csharp-client/releases</PackageReleaseNotes>

@@ -30,7 +30,7 @@ Global
 		$3.scope = text/x-csharp
 		$0.StandardHeader = $4
 		$0.VersionControlPolicy = $5
-		version = 2.1.1
+		version = 2.2.0
 		description = C# ADK for accessing Falkonry's condition prediction APIs
 	EndGlobalSection
 EndGlobal

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FalkonryClient</id>
-    <version>2.1.1</version>
+    <version>2.2.0</version>
     <authors>Falkonry Inc</authors>
     <owners>Falkonry Inc</owners>
     <licenseUrl>https://github.com/Falkonry/falkonry-csharp-client/blob/master/LICENSE</licenseUrl>
