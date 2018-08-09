@@ -566,7 +566,7 @@ namespace FalkonryClient.Tests
       }
       catch (System.Exception exception)
       {
-        Assert.AreEqual(exception.Message, null, "Cannot retrieve list of datastreams");
+        Assert.AreEqual(exception.Message + exception.StackTrace, null, "Cannot retrieve list of datastreams");
       }
     }
 
