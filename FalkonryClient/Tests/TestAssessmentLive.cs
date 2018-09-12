@@ -21,7 +21,8 @@ namespace FalkonryClient.Tests
     public void testLiveMonitoringStatus()
     {
       Assessment assessment = _falkonry.GetAssessment(assessmentId);
-      Assert.AreEqual(assessment.Live, "OFF");
+      string[] liveStatus = { "ON", "OFF" };
+      Assert.AreEqual(true, System.Array.IndexOf(liveStatus, assessment.Live) >= 0);
     }
 
 
